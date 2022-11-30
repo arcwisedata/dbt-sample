@@ -20,7 +20,18 @@ clean-targets:
 require-dbt-version: [">=1.2.0-rc1", "<2.0.0"]
 
 models:
+  metrics:
+    +schema: staging
+    +docs:
+      show: false
   jaffle_shop_metrics:
       materialized: table
       staging:
         materialized: view
+        +schema: staging
+        +docs:
+          show: false
+      intermediate:
+        +schema: staging
+        +docs:
+          show: false

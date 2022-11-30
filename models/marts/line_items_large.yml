@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: line_items_large
+    description: Line items produced from the Jaffle factory. Relatively large table!
+    columns:
+      - name: L_ORDERKEY
+        description: Foreign key to orders table
+      - name: L_PARTKEY
+        description: Foreign key to parts table
+      - name: L_SUPPKEY
+        description: Foreign key to suppliers table
+      - name: L_EXTENDEDPRICE
+        description: Base price. Final charge = (extended price) * (1 - discount) * (1 + tax)
