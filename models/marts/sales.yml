@@ -1,0 +1,13 @@
+version: 2
+
+metrics:
+  - name: sales
+    label: Sales
+    model: ref('sales')
+    description: "Retail sales volume"
+
+    calculation_method: sum
+    expression: sales
+
+    timestamp: date
+    time_grains: [month, quarter, year]
