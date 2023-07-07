@@ -9,7 +9,7 @@ metrics:
     expression: "{{metric('revenue')}} - {{metric('expenses')}}" 
 
     timestamp: order_date
-    time_grains: [hour, day, week, month, year]
+    time_grains: [day, week, month, year]
 
     dimensions:
       - customer_status
