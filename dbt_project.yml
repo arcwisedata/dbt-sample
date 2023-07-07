@@ -29,8 +29,6 @@ models:
       staging:
         materialized: view
         +schema: staging
-        +docs:
-          show: false
       intermediate:
         +schema: staging
         +docs:
